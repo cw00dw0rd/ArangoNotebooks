@@ -43,7 +43,6 @@ def getTempCredentials(tutorialName=None, tempURL='https://5904e8d8a65f.arangodb
             body = "{}"
         
         url = tempURL
-        print(url)
         x = requests.post(url, data = json.dumps(body))
 
         if x.status_code != 200:
